@@ -1,0 +1,25 @@
+<h2>
+  Editar Transferência
+</h2>
+
+<div class="container my-3">
+  <div class="col">
+    <form>
+      <div class="mb-3">
+        <label for="nomeCliente" class="form-label">Nome Cliente</label>
+        <input type="text" class="form-control" name="nomeCliente" id="nomeCliente" [(ngModel)]="transferencia.nomeCliente">
+      </div>
+      <div class="mb-3">
+        <label for="valor" class="form-label">Valor</label>
+        <input type="text" class="form-control" name="valor" id="valor" [(ngModel)]="transferencia.valor">
+      </div>
+      <div class="mb-3">
+        <label for="contaCliente" class="form-label">Conta Cliente</label>
+        <input type="text" class="form-control" name="contaCliente" id="contaCliente" [(ngModel)]="transferencia.contaCliente">
+      </div>
+      <div class="mb-5">
+        <button (click)="atualizar()" class="btn btn-dark">Atualizar</button>
+      </div>
+    </form>
+  </div>
+</div>
