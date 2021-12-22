@@ -23,7 +23,7 @@ rotas.get('/:id', (req, res) => {
     let sql = `select * from tb_transferencia where id_transferencia = ${id}`
     conexao.query(sql, (erro, rows, fields) => {
         if (erro) throw erro
-        res.json(rows)
+        res.json(rows[0])
     })
 })
 
